@@ -1,0 +1,35 @@
+/*
+ * @Author: Sephiroth·D·Kid
+ * @Date: 2018-07-13 14:53:43
+ * @LastEditors: Sephiroth·D·Kid
+ * @LastEditTime: 2018-07-13 17:05:27
+ * @Description:
+ * @Email: kudo777kid@Gmail.com
+ */
+
+.hd-select-dropdown.el-select-dropdown__item {
+  position: relative;
+  &:hover {
+    color: #fff;
+    background: #d7000f;
+  }
+  .el-checkbox {
+    width: 100%;
+    &:hover {
+      // background: #d7000f;
+      color: #fff;
+    }
+  }
+  .selected {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+// 当下拉框是 checkbox 样式时，隐藏后面的 √
+.el-select-dropdown.is-multiple {
+  .checkbox.el-select-dropdown__item.selected::after {
+    display: none;
+  }
+}

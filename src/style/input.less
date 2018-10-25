@@ -1,0 +1,85 @@
+/*
+ * @Author: Sephiroth·D·Kid
+ * @Date: 2018-07-09 15:11:18
+ * @LastEditors: Sephiroth·D·Kid
+ * @LastEditTime: 2018-08-09 10:08:19
+ * @Description:
+ * @Email: kudo777kid@Gmail.com
+ */
+
+@input-large-font-size: 14px;
+@input-medium-font-size: 14px;
+@input-small-font-size: 12px;
+
+@input-large-height: 40px;
+@input-medium-height: 36px;
+@input-small-height: 32px;
+
+.hd-input-large {
+  .el-input__inner {
+    height: @input-large-height;
+    // text-indent: 15px;
+  }
+}
+
+.hd-input-medium {
+  .el-input__inner {
+    height: @input-medium-height;
+  }
+}
+
+.hd-input-small {
+  font-size: @input-small-font-size !important;
+  .el-input__inner {
+    height: @input-small-height;
+    padding: 0 12px;
+  }
+}
+
+.hd-input {
+  .el-icon-success {
+    color: #09bb07;
+  }
+  .icon-warning {
+    color: #ffbe00 !important;
+  }
+  .el-icon-error {
+    color: #d7000f;
+  }
+}
+
+.hd-input-correct {
+  .el-input__inner {
+    border-color: #09bb07;
+  }
+}
+
+.hd-input-error {
+  .el-input__inner {
+    border-color: #d7000f;
+  }
+}
+
+.hd-input-correct.fill {
+  .el-input__inner {
+    border-color: #99e697;
+    color: #09bb07;
+    background: #ccf2cb;
+  }
+}
+
+.hd-input-warning.fill {
+  .el-input__inner {
+    border-color: #fade89;
+    color: #ffbe00;
+    background: #fef4d8;
+  }
+}
+
+.hd-input-error.fill {
+  .el-input__inner {
+    border-color: #f29da3;
+    color: #d7000f;
+    background: #facfd2;
+  }
+}

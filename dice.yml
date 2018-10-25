@@ -1,0 +1,28 @@
+name: dy-eaf-ui # 配置项目名称
+description: EAF-UI project # 配置项目描述
+
+scripts:
+  before-deploy:
+    - pampas setup
+    - pampas migrate
+  post-deploy:
+    - pampas clean
+
+endpoints:
+  dy-eaf-ui:
+    ports:
+      - 8888 # 配置项目端口
+    scale: 1 # 配置实例个数
+    resources:
+      cpus: 0.2 # 配置cpu
+      mem: 210 # 配置内存
+      disk: 250 # 配置硬盘
+global_env:
+  TERMINUS_APP_NAME: dy-eaf-ui # 配置项目名称
+  TA_CDN_PATH: //static.evergrande.com/eaf/js/ta.js # 配置监控数据的采集
+  TA_COLLECTOR_URL: //collector.eaf.evergrande.com/collect # 配置监控数据的采集
+  TERMINUS_CLIENT_SAMPLE_RATE: 1
+
+addons:
+  monitor:
+    plan: monitor:standard # 配置监控插件

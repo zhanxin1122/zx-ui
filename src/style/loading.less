@@ -1,0 +1,150 @@
+/*
+ * @Author: zhanxin
+ * @Date: 2018-08-27 09:05:44
+ * @LastEditors: zhanxin
+ * @LastEditTime: 2018-08-27 15:09:32
+ * @Description: 自定义指令样式
+ */
+@import "./base/variable.less";
+.hd-part-loading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transition: opacity 0.5s ease-out;
+  z-index: 22;
+  .none {
+    display: none;
+  }
+  .block {
+    display: block;
+    opacity: 1;
+  }
+  .opacity0 {
+    opacity: 0;
+  }
+  .loading-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    .outer1 {
+      box-sizing: border-box;
+      border: 5px solid @base-color;
+      opacity: 0.9;
+      width: 40px;
+      height: 40px;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      box-shadow: 0 0 35px rgba(0, 61, 76, 0.9);
+      animation: spin-right 0.5s linear infinite normal;
+      animation-delay: 0;
+      margin: 0 auto;
+    }
+    .inner1 {
+      display: block;
+      box-sizing: border-box;
+      width: 22px;
+      height: 22px;
+      border: 5px solid @base-color;
+      opacity: 0.9;
+      border-radius: 50%;
+      border-left-color: transparent;
+      border-bottom-color: transparent;
+      box-shadow: 0 0 35px rgba(0, 61, 76, 0.9);
+      position: relative;
+      top: -31px;
+      margin: 0 auto;
+      animation: spin-left 0.5s linear infinite normal;
+      animation-delay: 0;
+    }
+    .outer2,
+    .inner2 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      background: @base-color;
+      animation: loader3 1.5s linear infinite;
+    }
+    .inner2 {
+      animation-delay: -0.9s;
+    }
+    .outer3 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      padding: 0px;
+      border-radius: 100%;
+      border: 5px solid;
+      border-top-color: @base-color;
+      border-bottom-color: rgba(0, 0, 0, 0.1);
+      border-left-color: @base-color;
+      border-right-color: rgba(0, 0, 0, 0.1);
+      animation: loader4 1s ease-in-out infinite;
+    }
+    .inner3 {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+@keyframes spin-right {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0.2;
+  }
+}
+@keyframes spin-left {
+  from {
+    transform: rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: rotate(-180deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(-360deg);
+    opacity: 0.2;
+  }
+}
+@keyframes loader3 {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+@keyframes loader4 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

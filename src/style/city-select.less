@@ -1,0 +1,195 @@
+/*
+ * @Author: Sephiroth·D·Kid
+ * @Date: 2018-08-21 10:50:06
+ * @LastEditors: Sephiroth·D·Kid
+ * @LastEditTime: 2018-08-21 17:27:58
+ * @Description:
+ * @Email: kudo777kid@Gmail.com
+ */
+
+.city-select-wrapper {
+  // width: 440px;
+  position: relative;
+  background: #ffffff;
+  box-sizing: border-box;
+  .input-wrapper.no-county {
+    width: 260px;
+  }
+  .input-wrapper.has-county {
+    width: 440px;
+  }
+  .input-wrapper {
+    max-width: 440px;
+    display: flex;
+    height: 30px;
+    margin-bottom: 5px;
+    background: #f5f7fa;
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    cursor: pointer;
+    span {
+      display: inline-block;
+      line-height: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+    .provinces-name {
+      width: 70px;
+    }
+    .city-name {
+      // width: 125px;
+      flex: 1;
+    }
+    .county-name {
+      flex: 1;
+    }
+    .icon-arrow {
+      width: 30px;
+      i {
+        color: #c9d2db;
+        font-size: 14px;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .dropdown-toggle {
+    width: 440px;
+    margin: 5px 0 10px;
+    padding: 10px 20px;
+    position: absolute;
+    z-index: 2018;
+    background: #fff;
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    box-shadow: 1px 0 10px #ccc;
+    box-sizing: border-box;
+    .quick-search {
+      display: flex;
+      padding-bottom: 13px;
+      border-bottom: 1px solid #dfe3e9;
+      .quick-search-left {
+        padding: 0 4px;
+        line-height: 24px;
+        color: #a8aab7;
+        font-size: 14px;
+      }
+      .quick-search-right {
+        flex: 1;
+        .letter {
+          display: inline-block;
+          padding: 5px 10px;
+          color: #0076ff;
+          font-size: 14px;
+          span {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .search-box {
+      display: flex;
+      height: 60px;
+      padding-bottom: 10px;
+      justify-content: space-around;
+      align-items: center;
+      .search-bar {
+        width: 300px;
+      }
+    }
+    .cities-display {
+      min-height: 150px;
+      max-height: 265px;
+      margin: 13px 0 17px;
+      overflow-y: auto;
+      .provinces-item {
+        display: flex;
+        margin: 9px 0;
+        .first-letter {
+          width: 33px;
+          // margin-right: 7px;
+          line-height: 33px;
+          font-size: 33px;
+          color: #8ca0b3;
+        }
+        .provices-wrapper {
+          flex: 1;
+        }
+        .provices-item {
+          display: flex;
+        }
+        .provinces-name {
+          width: 58px;
+          line-height: 30px;
+          text-align: center;
+          font-weight: 600;
+          font-size: 14px;
+        }
+        .cities {
+          flex: 1;
+          .city-item {
+            display: inline-block;
+            padding: 0 15px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+              background: #d7000f;
+              color: #fff;
+              border-radius: 100px;
+            }
+          }
+          .city-item.active {
+            background: #d7000f;
+            color: #fff;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+    .counties-display {
+      min-height: 150px;
+      max-height: 265px;
+      margin: 13px 0 17px;
+      overflow-y: auto;
+      .counties-list {
+        margin: 10px 0;
+        .county-item {
+          display: inline-block;
+          padding: 0 15px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          cursor: pointer;
+          &:hover {
+            background: #d7000f;
+            color: #fff;
+            border-radius: 100px;
+          }
+        }
+        .county-item.active {
+          background: #d7000f;
+          color: #fff;
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+  .list-complete-item {
+    transition: all 1s;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .list-complete-enter, .list-complete-leave-to
+/* .list-complete-leave-active for below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .list-complete-leave-active {
+    position: absolute;
+  }
+  .display-wrapper-animate {
+    transition: all 0.5s;
+  }
+}

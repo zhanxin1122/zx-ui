@@ -1,0 +1,39 @@
+{
+  "common": {
+    "button": "./src/components/button/index.js",
+    "card": "./src/components/card/index.js",
+    "cascader": "./src/components/cascader/index.js",
+    "checkbox": "./src/components/checkbox/index.js",
+    "checkbox-group": "./src/components/checkbox-group/index.js",
+    "city-select": "./src/components/city-select/index.js",
+    "round": "./src/components/round/index.js",
+    "input": "./src/components/input/index.js",
+    "message-box": "./src/components/message-box/index.js",
+    "menu": "./src/components/menu/index.js",
+    "menu-item": "./src/components/menu-item/index.js",
+    "submenu": "./src/components/submenu/index.js",
+    "pagination": "./src/components/pagination/index.js",
+    "progress": "./src/components/progress/index.js",
+    "radio": "./src/components/radio/index.js",
+    "radio-group": "./src/components/radio-group/index.js",
+    "select": "./src/components/select/index.js",
+    "slider": "./src/components/slider/index.js",
+    "steps": "./src/components/steps/index.js",
+    "switch": "./src/components/switch/index.js",
+    "tabs": "./src/components/tabs/index.js",
+    "tab-pane": "./src/components/tab-pane/index.js",
+    "time-picker": "./src/components/time-picker/index.js",
+    "time-line": "./src/components/time-line/index.js",
+    "tree": "./src/components/tree/index.js",
+    "upload": "./src/components/upload/index.js"
+  },
+  "charts": {
+    "bar": "./src/components/bar/index.js",
+    "line": "./src/components/line/index.js",
+    "pie": "./src/components/pie/index.js",
+    "radar": "./src/components/radar/index.js"
+  },
+  "draggable": {
+    "draggable": "./src/components/draggable/index.js"
+  }
+}

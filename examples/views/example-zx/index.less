@@ -1,0 +1,46 @@
+/*
+ * @Author: zhanxin
+ * @Date: 2018-07-17 10:36:33
+ * @LastEditors: zhanxin
+ * @LastEditTime: 2018-07-27 10:26:58
+ * @Description: 
+ */
+@import '~@/style/base/variable.less';
+.intro-box {
+  padding: 0 20px;
+  .comp-title {
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 20px;
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 7px;
+      height: 18px;
+      background-color: @base-color;
+    }
+  }
+  .switch-warpper {
+    padding-bottom: 15px;
+    .hd-switch-warpper {
+      margin-top: 20px;
+      margin-right: 40px;
+    }
+  }
+}
+.demo-tree {
+  flex: 1;
+}
+.demo-tree-label {
+  font-size: 12px;
+  color: #000;
+}
+.demo-tree-operate {
+  float: right;
+  i {
+    color: #ccc;
+    margin-left: 6px;
+  }
+}

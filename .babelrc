@@ -1,0 +1,16 @@
+{
+  "presets": [["es2015", { "loose": true }], "stage-3"],
+  "plugins": ["transform-vue-jsx", "syntax-dynamic-import"],
+  "env": {
+    "utils": {
+      "plugins": [
+        ["module-resolver", {
+          "root": ["eaf-ui"],
+          "alias": {
+            "eaf-ui/src": "eaf-ui/lib"
+          }
+        }]
+      ]
+    }
+  }
+}

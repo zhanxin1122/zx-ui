@@ -1,0 +1,22 @@
+{
+  "attachment": [],
+  "audio": [],
+  "csv": ["csv"],
+  "eps": ["eps"],
+  "excel": ["xls", "xlsx"],
+  "exe": [],
+  "flash": ["swf", "fla"],
+  "image": ["jpg", "jpeg", "png", "svg"],
+  "keynode": ["key"],
+  "pages": ["pages"],
+  "pdf": ["pdf"],
+  "ppt": ["ppt", "pps"],
+  "psd": ["psd"],
+  "rtf": ["rtf"],
+  "txt": ["txt"],
+  "video": [],
+  "visio": ["vsd"],
+  "word": ["doc", "docx"],
+  "xml": ["xml"],
+  "zip": ["zip"]
+}

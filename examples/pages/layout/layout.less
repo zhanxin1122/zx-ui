@@ -1,0 +1,43 @@
+/*
+ * @Author: Sephiroth·D·Kid
+ * @Date: 2018-08-08 15:17:38
+ * @LastEditors: Sephiroth·D·Kid
+ * @LastEditTime: 2018-09-18 15:01:41
+ * @Description:
+ * @Email: kudo777kid@Gmail.com
+ */
+
+.layout-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .container-flex {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+  }
+  .main-wrapper {
+    flex: 1;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    &::-webkit-scrollbar {
+      width: 14px;
+    }
+    /*滚动条里面小方块*/
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #bbb;
+      opacity: 0.5;
+    }
+    &::-webkit-scrollbar-track {
+      background: #eee;
+    }
+  }
+}

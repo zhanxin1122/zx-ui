@@ -1,0 +1,45 @@
+/*
+ * @Author: Sephiroth·D·Kid
+ * @Date: 2018-08-17 15:57:16
+ * @LastEditors: Sephiroth·D·Kid
+ * @LastEditTime: 2018-08-17 17:43:08
+ * @Description:
+ * @Email: kudo777kid@Gmail.com
+ */
+
+// 恒大多选样式一
+.hd-select.checkbox {
+  .el-select-dropdown__list {
+    .el-select-dropdown__item {
+      padding-left: 40px;
+      text-align: left;
+      &::before {
+        content: '\e64d';
+        font-family: 'iconfont';
+        position: absolute;
+        top: 0px;
+        left: 20px;
+      }
+    }
+    .el-select-dropdown__item.selected {
+      &::before {
+        content: '\e6b7';
+        font-family: 'iconfont';
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+// 恒大多选样式二
+.hd-select.circle {
+  .el-select-dropdown__list {
+    .el-select-dropdown__item.selected {
+      &::after {
+        content: '\e61d' !important;
+        font-family: 'iconfont' !important;
+      }
+    }
+  }
+}

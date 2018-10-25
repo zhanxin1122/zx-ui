@@ -1,0 +1,265 @@
+/*
+ * @Author: shejuan
+ * @Date: 2018-07-25 15:19:04
+ * @LastEditors: shejuan
+ * @LastEditTime: 2018-08-27 10:24:23
+ * @Description: menu的公共组件样式
+ */
+// 当导航栏字符≥4个时，一级菜单浅色的样式 与深色的样式
+.menu_row-style-more-light {
+  .el-menu-item.is-active {
+    background: rgba(215, 0, 15, 0.06) !important;
+    color: #d7000f !important;
+    border-left: 4px solid #d7000f;
+    i {
+      color: #d7000f !important;
+    }
+  }
+
+  .el-menu-item:hover,
+  .el-menu-item:focus {
+    background-color: rgba(215, 0, 15, 0.06);
+  }
+
+  .el-submenu__title:hover {
+    background-color: rgba(215, 0, 15, 0.06);
+  }
+  .el-menu,
+  .el-menu-item {
+    background-color: #ffffff;
+    color: #323947;
+  }
+  .el-menu-item {
+    border-left: 4px solid rgba(255, 255, 255, 0.1);
+  }
+}
+.menu_row-style-more-deep {
+  .el-menu-item.is-active {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-left: 4px solid #d7000f;
+    i {
+      color: #cbcdd1 !important;
+    }
+  }
+
+  .el-menu-item:hover,
+  .el-submenu:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .el-menu,
+  .el-menu-item {
+    background-color: #252b3d;
+    color: #ffffff;
+  }
+  .el-menu-item {
+    border-left: 4px solid rgba(37, 43, 61, 0.1);
+  }
+}
+
+// 当导航栏字符≥4个时，二级菜单浅色的样式 与深色的样式
+.menu_row-style-more-sleep-second-step {
+  .el-submenu__title {
+    border-left: 4px solid #ffffff;
+  }
+
+  .el-menu-item.is-active {
+    background-color: #ffffff !important;
+    border-left: none;
+  }
+
+  .el-menu-item {
+    border-left: none;
+    // padding-left: 20px !important;
+  }
+}
+
+.menu_row-style-more-sleep-second-step.is-active {
+  .el-submenu__title {
+    border-left: 4px solid #d7000f;
+    background: rgba(215, 0, 15, 0.06) !important;
+    color: #d7000f !important;
+  }
+}
+
+.menu_row-style-more-deep-second-step.is-active {
+  .el-submenu__title {
+    border-left: 4px solid #d7000f;
+  }
+}
+
+.menu_row-style-more-deep-second-step {
+  .el-menu-item.is-active {
+    background-color: rgb(24, 29, 41) !important;
+    border-left: none;
+    color: #ffffff;
+  }
+
+  .el-menu-item {
+    border-left: none;
+    padding-left: 20px !important;
+    color: #9c9fa7;
+    background: #181d29;
+  }
+
+  .el-submenu__title {
+    color: #ffffff;
+    border-left: 4px solid rgba(37, 43, 61, 0.1);
+  }
+
+  .el-submenu__title:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+// 当导航栏字符≥4个时，三级菜单浅色的样式 与深色的样式
+.menu_row-style-more-sleep-third-step {
+  .el-submenu__title {
+    border-left: none;
+    // padding-left: 20px !important;
+  }
+}
+
+.menu_row-style-more-deep-third-step {
+  .el-submenu__title {
+    border-left: none;
+    // padding-left: 20px !important;
+  }
+}
+
+
+// 顶部横向导航栏浅色的样式
+.menu_col-style-more-light {
+  .el-menu--horizontal {
+    height: 60px;
+    padding: 12px 0px;
+  }
+
+  .el-menu-item.is-active {
+    border-bottom: none;
+    background-color: #d7000f !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+  }
+  .el-menu-item {
+    height: 36px;
+    line-height: 36px;
+    color: #323947;
+    border-bottom: none;
+    margin: 0px 11px 0px 9px;
+  }
+
+  .el-menu-item:not(.is-disabled):hover{
+    color: #d7000f;
+  }
+}
+
+// 顶部横向导航栏深色的样式
+.menu_col-style-more-deep {
+  .el-menu--horizontal {
+    height: 60px;
+    padding: 12px 0px;
+    background-color: #252b3d;
+  }
+
+  .el-menu-item.is-active {
+    border-bottom: none;
+    background-color: #d7000f !important;
+    color: #ffffff !important;
+    border-radius: 4px;
+  }
+  .el-menu-item {
+    height: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    border-bottom: none;
+    margin: 0px 11px 0px 9px;
+  }
+
+  .el-menu-item:not(.is-disabled):hover{
+    color: #d7000f;
+    background: #252b3d;
+  }
+}
+
+@menu-bgColor: #d7000f;
+@menu-textColor: #d3d4d8;
+// 当导航栏字符≦4个时，一级菜单浅色的样式 与深色的样式
+.menu_row-style-less-light {
+  // 主要修改背景色
+  .el-menu-item.is-active {
+    background: @menu-bgColor !important;
+    color: #ffffff !important;
+    i {
+      color: #ffffff !important;
+    }
+  }
+
+  .el-menu-item:hover,
+  .el-menu-item:focus {
+    background: rgba(215, 0, 15, 0.06);
+    color: #d7000f;
+    i {
+      color: #d7000f;
+    }
+  }
+
+  // 主要修改上下样式
+  .el-menu {
+    width: 80px;
+    border-right: none;
+  }
+
+  .el-menu-item {
+    height: 73px;
+    line-height: normal;
+    display: grid;
+    padding: 12px 0 !important;
+    text-align: center;
+    border-bottom: solid 1px #e6e6e6;
+
+    i,
+    span {
+      display: block;
+      width: auto;
+    }
+  }
+}
+.menu_row-style-less-deep {
+  // 主要修改背景色
+  .el-menu-item.is-active {
+    background: @menu-bgColor !important;
+    color: #ffffff !important;
+    i {
+      color: #ffffff !important;
+    }
+  }
+
+  .el-menu-item:hover,
+  .el-menu-item:focus {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  // 主要修改上下样式
+  .el-menu {
+    width: 80px;
+    background-color: #252b3d;
+    border-right: none;
+  }
+
+  .el-menu-item {
+    height: 73px;
+    line-height: normal;
+    display: grid;
+    padding: 12px 0 !important;
+    text-align: center;
+    border-bottom: solid 1px #e6e6e6;
+    color: #d3d4d8;
+
+    i,
+    span {
+      display: block;
+      width: auto;
+    }
+  }
+}
